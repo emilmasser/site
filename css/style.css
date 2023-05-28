@@ -87,6 +87,16 @@ img.svg{
 	position:relative;
 	clear:both;
 }
+.containerplus{
+	max-width: 1070px;
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+	height:auto;
+	padding:20px 40px;
+	position:relative;
+	clear:both;
+}
 
 h1, h2, h3, h4, h5, h6{
 	font-weight:500;
@@ -120,6 +130,7 @@ a{
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */
 }
+
 
 #preloader{
     position: fixed;
@@ -169,7 +180,7 @@ a{
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    background-color: #fff;
+    background-color: red;
     -webkit-animation: lineheight 1000ms ease-in-out 0s forwards;
     -o-animation: lineheight 1000ms ease-in-out 0s forwards;
     animation: lineheight 1000ms ease-in-out 0s forwards;
@@ -181,7 +192,7 @@ a{
     top: 0;
     width: 1px;
     height: 100%;
-    background-color: #999999;
+    background-color: #F0EEEB;
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     -o-transform: translateY(-100%);
@@ -284,15 +295,15 @@ a{
 .tokyo_tm_topbar .hamburger-inner, 
 .tokyo_tm_topbar .hamburger-inner:after, 
 .tokyo_tm_topbar .hamburger-inner:before{
-	width: 30px;
-	height: 2px;
+	width: 20px;
+	height: 3px;
 }
 .tokyo_tm_topbar .trigger{
 	position: relative;
 	top: 5px;
 }
 .tokyo_tm_topbar .hamburger-box{
-	width: 30px;
+	width: 20px;
 }
 .tokyo_tm_mobile_menu{
 	position: fixed;
@@ -329,7 +340,8 @@ a{
 }
 .tokyo_tm_mobile_menu .menu_list ul li a{
 	color: #0019FF;
-	font-family: "Poppins", serif;
+	font-weight: 500;
+	font-family: "Poppins",serif;
 }
 
 /*---------------------------------------------------*/
@@ -401,7 +413,7 @@ a{
 }
 .tokyo_tm_all_wrap .leftpart .copyright p{
 	font-size: 15px;
-	color: #999;
+	color: #F0EEEB;
 	font-family: "Poppins";
 	line-height: 25px;
 }
@@ -436,7 +448,7 @@ a{
 	width: 100%;
 	float: left;
 	clear: both;
-	border-left: 1px solid #ebebeb;
+	border-left: 1px solid #F0EEEB;
 	min-height: 100vh;
 }
 .tokyo_tm_section{
@@ -479,22 +491,30 @@ a{
 /*	05) TOKYO HOME
 /*---------------------------------------------------*/
 
+
+}
+.cvlink {
+	
+	//
+}
+
 #midlink {
 	color: #0019FF;
-	font-weight:700;
+	font-weight:700;	
 	line-height: 1.4;
 	font-family: "Poppins", serif;
 	display: flex;
 	justify-content: center;
-	font-size: 200px;
+	font-size: 190px;
 
 	margin: auto;
-
-	border: 3px solid green;
+padding-bottom:25px;
+	border: 3px solid transparent;
 }
 
 #midlink:hover {
-color: #222222;
+/*color: #222222;*/
+text-decoration: underline;
 }
 
 #reelVideo {
@@ -517,7 +537,18 @@ color: #222222;
   min-height:100%;
   max-height:130%;
 
+
 }
+
+#homeVideoMobile {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-left: 50vw;
+  transform: translate(-50%);
+  height:0px;
+
+  }
 .tokyo_tm_home{
 	width: 100%;
 	min-height: 100vh;
@@ -627,7 +658,7 @@ color: #222222;
 	height: auto;
 	clear: both;
 	float: left;
-	padding: 100px 0px 100px 0px;
+	padding: 100px 0px 0px 0px;
 }
 
 .tokyo_tm_button{
@@ -680,7 +711,7 @@ color: #222222;
 	height: auto;
 	clear: both;
 	float: left;
-	border-bottom: 1px solid #DFDFDF;
+/*	border-bottom: 3px solid #222;*/
 	padding-bottom: 20px;
 	margin-bottom: 27px;
 }
@@ -693,7 +724,7 @@ color: #222222;
 	height: auto;
 	clear: both;
 	float: left;
-	border-bottom: 1px solid #DFDFDF;
+/*	border-bottom: 3px solid #222;*/
 	padding-bottom: 31px;
 	margin-bottom: 30px;
 }
@@ -709,9 +740,9 @@ color: #222222;
 	clear: both;
 	float: left;
 	display: flex;
-	border-bottom: 1px solid #DFDFDF;
-	padding-bottom: 30px;
+	padding-bottom: 0px;
 	margin-bottom: 40px;
+
 }
 .tokyo_tm_short_info .left{
 	width: 50%;
@@ -807,7 +838,7 @@ color: #222222;
 	height:3px;
 }
 .progress_inner .background .bar_in{
-	background:#0019FF;
+	background: #0019FF;
 	overflow:hidden;
 	position: absolute;
 	left: 0px;
@@ -937,7 +968,7 @@ color: #222222;
     width: 18px;
     background: #fff;
     border-radius: 100%;
-    border: solid 1px #CCC;
+    border: solid 1px #F0EEEB;
     left: -9px;
     top: 8px;
 }
@@ -951,6 +982,7 @@ color: #222222;
 .tokyo_tm_resume_list ul li .time{
 	width: 50%;
 	padding-right: 20px;
+	
 }
 .tokyo_tm_resume_list ul li .time span{
 	display: inline-block;
@@ -959,6 +991,7 @@ color: #222222;
 	border-radius: 50px;
 	font-size: 14px;
 	white-space: nowrap;
+	background-color: #f0eeeb;
 }
 .tokyo_tm_resume_list ul li .place{
 	width: 50%;
@@ -1444,7 +1477,7 @@ color: #222222;
 	padding: 4px 10px;
 	font-weight: 600;
 	font-size: 12px;
-	color: #333;
+	color: #222;
 	font-family: "Poppins";
 	letter-spacing: 0px;
 	margin-bottom: 11px;
@@ -2146,7 +2179,7 @@ color: #222222;
     top: 50%;
     transform: translateY(-50%) rotate(15deg);
     right: 100%;
-    background-color: #939393;
+    background-color: #F0EEEB;
     width: 1px;
     height: 9px;
     margin-right: 7px;
@@ -2207,13 +2240,13 @@ body.modal{
 }
 .tokyo_tm_modalbox .description_wrap{
   scrollbar-width: thin;
-  scrollbar-color: #999 #fff;
+  scrollbar-color: #F0EEEB #fff;
 }
 .tokyo_tm_modalbox .description_wrap:-webkit-scrollbar-track{
   background: #fff;
 }
 .tokyo_tm_modalbox .description_wrap::-webkit-scrollbar-thumb{
-  background-color: #999;
+  background-color: #F0EEEB;
   border-radius: 6px;
   border: 3px solid #fff;
 }
@@ -2370,8 +2403,13 @@ body.modal{
 	.tokyo_tm_home .details .name{font-size: 48px;margin-bottom: 10px;}
 	.tokyo_tm_home .details .job{margin-bottom: 22px;}
 	.tokyo_tm_modalbox .box_inner{width: 850px;}
+
 }
 @media (max-width: 1200px) {
+	.mouse-cursor{display: none;}
+	.tokyo_tm_home .home_content{flex-direction: column;text-align: center;}
+	.tokyo_tm_home .avatar{margin-bottom: 30px;}
+	.tokyo_tm_home .details{margin-left: 0px;}
 	.tokyo_tm_topbar{display: block;}
 	.tokyo_tm_section{padding-left: 0px;}
 	.tokyo_tm_all_wrap .leftpart{display: none;}
@@ -2391,8 +2429,11 @@ body.modal{
 	.tokyo_tm_modalbox .additional_images ul li{padding-left: 0px;width: 100%;}
 	.tokyo_tm_modalbox .description_wrap:after{height: 40px;}
 	.tokyo_tm_modalbox .description_wrap:before{height: 40px;}
-	#home h3 {text-align: right;}
-	#home {text-align: right;}
+/*	#home h3 {text-align: right;}*/
+/*	#home {text-align: right;}*/
+		#midlink {font-size: 150px; /*padding-top: 30%*/}
+		#homeVideo {width:0px; height:0px;}
+		#homeVideoMobile {  min-height:100%; max-height:130%;}
 
 }
 @media (max-width: 1040px) {
@@ -2408,10 +2449,7 @@ body.modal{
 	.tokyo_tm_modalbox .details .title{font-size: 20px;}
 	.tokyo_tm_modalbox .portfolio_main_title h3{font-size: 20px;}
 	.tokyo_tm_modalbox .service_popup_informations .main_title h3{font-size: 20px;}
-	#homeVideo {opacity: 40%;}
-	#home h3 {text-align: center;}
-	#home {text-align: right;}
-	#midlink {font-size: 150px;}
+	#midlink {font-size: 110px;}
 
 }
 
@@ -2452,7 +2490,7 @@ body.modal{
 	.tokyo_tm_modalbox .description_wrap:after{height: 20px;}
 	.tokyo_tm_modalbox .description_wrap:before{height: 20px;}
 	.tokyo_tm_modalbox .portfolio_main_title{margin-bottom: 20px;}
-		#midlink {font-size: 110px;}
+
 }
 
 @media (max-width: 500px) {
