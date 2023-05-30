@@ -23,12 +23,17 @@
 /*	01) TOKYO BASE
 /*---------------------------------------------------*/
 
+ * {
+cursor: none;
+scroll-behavior: smooth
+}
+
 
 html {
 	overflow-x: hidden;
 	padding: 0px;
 	margin: 0px
-/*	cursor: none;*/
+	cursor: none;
 
 }
 body{
@@ -150,7 +155,7 @@ a{
     width: 50%;
     height: 100%;
     z-index: -1;
-    background-color: #222222;
+    background-color: #fff;
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -165,9 +170,9 @@ a{
     height: 250px;
     position: relative;
     overflow: hidden;
-    -webkit-transition: all 0.8s ease 0s;
-    -o-transition: all 0.8s ease 0s;
-    transition: all 0.8s ease 0s;
+    -webkit-transition: all 0.8s ease ;
+    -o-transition: all 0.8s ease ;
+    transition: all 0.8s ease ;
 }
 .loader_line:before{
     content: '';
@@ -180,7 +185,7 @@ a{
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    background-color: red;
+    background-color: #222;
     -webkit-animation: lineheight 1000ms ease-in-out 0s forwards;
     -o-animation: lineheight 1000ms ease-in-out 0s forwards;
     animation: lineheight 1000ms ease-in-out 0s forwards;
@@ -192,7 +197,7 @@ a{
     top: 0;
     width: 1px;
     height: 100%;
-    background-color: #F0EEEB;
+    background-color: #222;
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     -o-transform: translateY(-100%);
@@ -229,6 +234,7 @@ a{
 
 /*hiding all*/
 .preloaded .loader_line:after{
+    
     opacity: 0;
 }
 .preloaded  .loader_line{
@@ -295,7 +301,7 @@ a{
 .tokyo_tm_topbar .hamburger-inner, 
 .tokyo_tm_topbar .hamburger-inner:after, 
 .tokyo_tm_topbar .hamburger-inner:before{
-	width: 20px;
+	width: 30px;
 	height: 3px;
 }
 .tokyo_tm_topbar .trigger{
@@ -303,7 +309,7 @@ a{
 	top: 5px;
 }
 .tokyo_tm_topbar .hamburger-box{
-	width: 20px;
+	width: 30px;
 }
 .tokyo_tm_mobile_menu{
 	position: fixed;
@@ -517,6 +523,7 @@ padding-bottom:25px;
 text-decoration: underline;
 }
 
+
 #reelVideo {
   position: fixed;
   height:100%;
@@ -703,7 +710,7 @@ text-decoration: underline;
 	margin-bottom: 35px;
 }
 .tokyo_tm_about .top_author_image img{
-	min-width: 100%;
+	min-width: 10%;
 }
 
 .tokyo_tm_about .about_title{
@@ -1564,14 +1571,36 @@ text-decoration: underline;
 	background-position: center;
 	background-size: cover;
 	
-	-webkit-transition: all .3s ease;
+	-webkit-transition: all .6s ease;
+	   -moz-transition: all .6s ease;
+	    -ms-transition: all .6s ease;
+	     -o-transition: all .6s ease;
+	        transition: all .6s ease;
+}
+
+.tokyo_tm_portfolio .portfolio_list li .inner .abs_image_overlay{
+	transform: scale(0) translateZ(0);
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+		-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
 	    -ms-transition: all .3s ease;
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
+.tokyo_tm_portfolio .portfolio_list li .inner:hover .abs_image_overlay{
+	transform: scale(0.3) translateZ(0);
+}
+
 .tokyo_tm_portfolio .portfolio_list li .inner:hover .abs_image{
-	transform: scale(1.1) translateZ(0);
+	transform: scale(1.04) translateZ(0);
 }
 .tokyo_tm_portfolio_titles {
 	white-space: nowrap;
@@ -2362,10 +2391,10 @@ body.modal{
   
 }
 .cursor-inner.cursor-hover {
-  margin-left: -17px;
-  margin-top: -17px;
-  width: 34px;
-  height: 34px;
+  margin-left: -15px;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
   background-color: #d0ee25;
   opacity: .5;
 
@@ -2450,6 +2479,8 @@ body.modal{
 	.tokyo_tm_modalbox .portfolio_main_title h3{font-size: 20px;}
 	.tokyo_tm_modalbox .service_popup_informations .main_title h3{font-size: 20px;}
 	#midlink {font-size: 110px;}
+
+
 
 }
 
