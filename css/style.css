@@ -171,8 +171,8 @@ a{
     -webkit-transition: all 0.8s ease ;
     -o-transition: all 0.8s ease ;
     transition: all 0.8s ease ;
-border: 2px solid #fff;
-  border-radius: 50%;
+/*border: 2px solid #fff;
+  border-radius: 50%;*/
   width: 50px;
   height: 50px;
   -webkit-animation: spin 2s linear infinite; /* Safari */
@@ -2059,7 +2059,7 @@ text-decoration: underline;
 	position: fixed;
 	left: 100%;
 	top: 0px;
-	margin-left: 30px;
+	margin-left: 10px;
 	z-index: 10;
 }
 .tokyo_tm_modalbox .close a{
@@ -2068,7 +2068,7 @@ text-decoration: underline;
 	height: 40px;
 	color: #fff;
 	border:2px solid #fff;
-	border-radius: 10px;
+	border-radius: 12px;
 	position: relative;
 	
 	-webkit-transition: all .3s ease;
@@ -2078,7 +2078,7 @@ text-decoration: underline;
 	        transition: all .3s ease;
 }
 .tokyo_tm_modalbox .close a:hover{
-	border-radius: 100%;
+	border-radius: 17px;
 }
 .tokyo_tm_modalbox .close a i{
 	position: absolute;
